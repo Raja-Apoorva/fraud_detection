@@ -1,0 +1,40 @@
+Transaction Data:
+  source_account target_account  transaction_amount transaction_date
+0           John          Smith                 100       2024-01-01
+1           John            Rob                 150       2024-01-02
+2          Smith         Taylor                 200       2024-01-03
+3            Rob           Mike                 250       2024-01-04
+4         Taylor           John                 300       2024-01-05
+5           Mike         Stacey                 350       2024-01-06
+6         Stacey            Kim                 400       2024-01-07
+7            Kim           Reed                 450       2024-01-08
+8           Reed           Mark                 500       2024-01-09
+9           Mark         Justin                 550       2024-01-10
+
+Strongly Connected Components (Potential Fraud Networks):
+Community 1: {'Justin'}
+Community 2: {'Mark'}
+Community 3: {'Reed'}
+Community 4: {'Kim'}
+Community 5: {'Stacey'}
+Community 6: {'Mike'}
+Community 7: {'Rob'}
+Community 8: {'John', 'Taylor', 'Smith'}
+
+PageRank Centrality:
+Node John: 0.0987
+Node Smith: 0.0685
+Node Rob: 0.0685
+Node Taylor: 0.0848
+Node Mike: 0.0848
+Node Stacey: 0.0987
+Node Kim: 0.1104
+Node Reed: 0.1205
+Node Mark: 0.1290
+Node Justin: 0.1362
+
+Nodes with High In-Degree (Potential Money Mules):
+[]
+
+Nodes with High Out-Degree (Potential Fraud Sources):
+['John']
